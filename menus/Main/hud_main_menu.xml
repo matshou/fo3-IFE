@@ -1,0 +1,960 @@
+	<!-- hud_main_menu.xml -->
+<menu name="HUDMainMenu">
+	<class> &HUDMainMenu; </class>
+	<stackingtype> &does_not_stack; </stackingtype>
+	<visible> &false; </visible>
+	<alpha> 255 </alpha>
+	<locus> &true; </locus>
+	<depth> -50 </depth>
+	<x> 0 </x>
+	<y> 0 </y>
+	<menufade> 0.25 </menufade>
+
+	<!-- Region text -->
+	<user7> 0 </user7>
+	<!-- alpha -->
+	<user8> Region name text </user8>
+
+	<!-- named traits -->
+	<_SpreadPercentage> 1.0 </_SpreadPercentage>
+	<_CrosshairVisible> &false; </_CrosshairVisible>
+	<_CrosshairAlpha> 255 </_CrosshairAlpha>
+	<_SpreadChangeSpeed> 0.125 </_SpreadChangeSpeed>
+	<_ReticleAlpha> 255 </_ReticleAlpha>
+	<_FadeSpeed> 0.25 </_FadeSpeed>
+	<_SneakVisible> &false; </_SneakVisible>
+	<_SneakLevel> 0.0 </_SneakLevel>
+	<_RadiationLevel> 0 </_RadiationLevel>
+	<_TargetType> 0 </_TargetType>
+	<_ActionType> 0 </_ActionType>
+
+
+	<image name="vertGuide">
+		<include src="line.xml" />
+		<_horizontal> &false; </_horizontal>
+		<systemcolor> &nosystemcolor; </systemcolor>
+		<_width> <copy src="globals()" trait="_HUDShowGuides" /> </_width>
+		<visible> <copy src="globals()" trait="_HUDShowGuides" /> </visible>
+		<alpha> 128 </alpha>
+		<x>
+			<copy src="screen()" trait="width" />
+			<sub src="me()" trait="width" />
+			<div> 2 </div>
+		</x>
+		<y> 0 </y>
+		<_length> <copy src="screen()" trait="height" /> </_length>
+	</image>
+
+	<image name="vertGuide2">
+		<include src="line.xml" />
+		<_horizontal> &false; </_horizontal>
+		<systemcolor> &nosystemcolor; </systemcolor>
+		<_width> 1 </_width>
+		<visible> 0 </visible>
+		<alpha> 128 </alpha>
+		<x> 25 </x>
+		<y> 0 </y>
+		<_length> <copy src="screen()" trait="height" /> </_length>
+	</image>
+
+	<image name="horizGuide">
+		<include src="line.xml" />
+		<systemcolor> &nosystemcolor; </systemcolor>
+		<_width> <copy src="globals()" trait="_HUDShowGuides" /> </_width>
+		<visible> <copy src="globals()" trait="_HUDShowGuides" /> </visible>
+		<alpha> 128 </alpha>
+		<x> 0 </x>
+		<y>
+			<copy src="screen()" trait="height" />
+			<sub src="me()" trait="height" />
+			<div> 2 </div>
+		</y>
+		<_length> <copy src="screen()" trait="width" /> </_length>
+	</image>
+
+	<include src="darn\hudtemplates.xml" />
+	<include src="darn\duiF3Extras.xml" />
+	<include src="darn\fooknvmeter.xml" />
+
+	<_HUDMode> <copy src="ActionPoints" trait="visible" /> </_HUDMode>
+	<_HUDAlpha>
+		<copy src="ActionPoints" trait="_alphaSource" />
+		<add>
+			<copy> 255 </copy>
+			<onlyifnot src="ActionPoints" trait="_alphaSource" /> <!-- DarN will be 0 if alpha is max in settings -->
+		</add>
+	</_HUDAlpha>
+	<_MeterAlpha>
+		<copy src="me()" trait="_HUDAlpha" />
+		<min> 200 </min>
+	</_MeterAlpha>
+	<_HUDinCombat> <copy src="globals()" trait="_HUDShowCI" /> </_HUDinCombat> <!-- DarN for FOSE -->
+	<_inCombat> 0 </_inCombat>
+
+	<!--*********************************************************************************** GLOW_BRANCH -->
+
+	<image name="DUIF3_CombatIndicator">
+		<filename> Interface\loading\glow_loading_vdsgsymbol.dds </filename>
+		<x>
+			<copy src="screen()" trait="width" />
+			<sub src="me()" trait="width" />
+			<div> 2 </div>
+			<add src="globals()" trait="_HUDCI_X" />
+		</x>
+		<y> <copy src="globals()" trait="_HUDCI_Y" /> </y>
+		<width>
+			<copy> 128 </copy>
+			<mul src="globals()" trait="_duiscale" />
+		</width>
+		<height>
+			<copy> 64 </copy>
+			<mul src="globals()" trait="_duiscale" />
+		</height>
+		<zoom> <copy src="globals()" trait="_duiHUDscale" /> </zoom>
+		<systemcolor> &hudalt; </systemcolor>
+		<alpha> <copy src="io()" trait="_HUDAlpha" /> </alpha>
+		<visible>
+			<copy src="globals()" trait="_HUDShowCI" /> <!-- DarN redundant? -->
+			<and src="io()" trait="_HUDMode" />
+			<and src="io()" trait="_inCombat" />
+		</visible>
+	</image>
+
+	<rect name="AP_Wrap">
+		<x>
+			<copy src="globals()" trait="_duiHUDOffset" />
+			<onlyif src="globals()" trait="_HUDShowAPInfo" />
+			<add src="screen()" trait="width" />
+			<sub>
+				<copy> 345 </copy>
+				<mul src="globals()" trait="_duiscale_65" />
+			</sub>
+			<add src="globals()" trait="_HUDAPInfo_X" />
+		</x>
+		<y>
+			<copy src="screen()" trait="height" />
+			<sub>
+				<copy src="child(ActionPoints)" trait="height" />
+				<mul src="globals()" trait="_duiscale_65" />
+			</sub>
+			<add src="globals()" trait="_HUDAPInfo_Y" />
+		</y>
+		<locus> &true; </locus>
+
+		<rect name="ActionPoints">
+			<id> &noglow_branch; </id>
+			<systemcolor> <copy src="globals()" trait="_duiHUDSysColor" /> </systemcolor>
+			<width> 386 </width>
+			<height> 127 </height>
+			<_isAPRect> &true; </_isAPRect>
+		</rect>
+	</rect>
+
+	<!--*********************************************************************************** GLOW_BRANCH -->
+	<rect name="HP_Wrap">
+		<x>
+			<copy src="globals()" trait="_duiHUDOffset" />
+			<add src="globals()" trait="_HUDHPInfo_X" />
+		</x>
+		<y>
+			<copy src="screen()" trait="height" />
+			<sub>
+				<copy src="child(HitPoints)" trait="height" />
+				<mul src="globals()" trait="_duiscale_65" />
+			</sub>
+			<add src="globals()" trait="_HUDHPInfo_Y" />
+		</y>
+		<locus> &true; </locus>
+		<visible> <copy src="globals()" trait="_HUDShowHPInfo" /> </visible>
+
+		<rect name="HitPoints">
+			<id> &noglow_branch; </id>
+			<systemcolor> <copy src="globals()" trait="_duiHUDSysColor" /> </systemcolor>
+			<width> 369 </width>
+			<height> 127 </height>
+			<_isHPRect> &true; </_isHPRect>
+		</rect>
+	</rect>
+
+	<!--*********************************************************************************** GLOW_BRANCH -->
+	<rect name="SneakMeter">
+		<id> &noglow_branch; </id>
+		<systemcolor> &hudmain; </systemcolor>
+		<width> 356 </width>
+		<height> 34 </height>
+
+		<text name="sneak_nif">
+			<width> 128 </width>
+			<height> 128 </height>
+			<x>
+				<copy src="globals()" trait="_duiHUDOffset" />
+				<onlyifnot src="globals()" trait="_HUDShowSneak" />
+				<add src="globals()" trait="_HUDSneak_X" />
+			</x>
+			<y> <copy src="globals()" trait="_HUDSneak_Y" /> </y>
+			<justify> &center; </justify>
+			<font> <copy src="globals()" trait="_HUDSneakFont" /> </font>
+			<brightness>
+				<copy> &uselocalcolor; </copy>
+				<add>
+					<copy> 256 </copy>
+					<onlyif>
+						<copy src="me()" trait="systemcolor" />
+						<eq> &hudalt; </eq>
+						<or> <not src="globals()" trait="_HUDOverrideColor" /> </or>
+					</onlyif>
+				</add>
+			</brightness>
+			<red> <copy src="globals()" trait="_HUDRed" /> </red>
+			<green> <copy src="globals()" trait="_HUDGreen" /> </green>
+			<blue> <copy src="globals()" trait="_HUDBlue" /> </blue>
+		</text>
+	</rect>
+
+
+	<!--*********************************************************************************** GLOW_BRANCH -->
+	<rect name="ReticleCenter">
+		<id> &noglow_branch; </id>
+		<systemcolor> <copy src="globals()" trait="_duiHUDSysColor" /> </systemcolor>
+		<width> <!-- DarN 63 -->
+			<copy> 63 </copy>
+			<mul src="globals()" trait="_duiscale" />
+		</width>
+		<height>
+			<copy> 75 </copy> <!-- DarN 75 -->
+			<mul src="globals()" trait="_duiscale" />
+		</height>
+	</rect>
+
+	<!--*********************************************************************************** GLOW_BRANCH -->
+	<rect name="EH_Wrap">
+		<x>
+			<copy src="globals()" trait="_duiHUDOffset" />
+			<!-- <onlyif src="globals()" trait="_HUDShowEH" /> -->
+			<add src="globals()" trait="_HUDEH_X" />
+		</x>
+		<y> <copy src="globals()" trait="_HUDEH_Y" /> </y>
+		<width> 350 </width>
+		<height> 52 </height>
+		<locus> &true; </locus>
+		<visible> <copy src="globals()" trait="_HUDShowEH" /> </visible>
+		<rect name="EnemyHealth">
+			<id> &noglow_branch; </id>
+			<!-- <systemcolor> &hudmain; </systemcolor> -->
+			<width>
+				<copy> 350 </copy>
+				<mul src="globals()" trait="_duiscale_65" />
+			</width>
+			<height>
+				<copy> 52 </copy>
+				<mul src="globals()" trait="_duiscale_65" />
+			</height>
+			<_isEHRect> &true; </_isEHRect>
+		</rect>
+	</rect>
+
+	<!--===========	Quest Reminder =====================-->
+	<rect name="QuestWrap">
+		<locus> &true; </locus>
+		<x> <copy src="globals()" trait="_duiHUDOffset" /> </x>
+		<y> 0 </y>
+		<locus> &true; </locus>
+
+		<rect name="QuestReminder">
+			<id> &noglow_branch; </id>
+
+			<width> 400 </width>
+			<height> 200 </height>
+			<locus> &true; </locus> <!-- DarN true -->
+			<_isQRRect> &true; </_isQRRect>
+			<!--=========== Quest stages ========================-->
+			<rect name="QSWrap">
+				<x> <copy src="globals()" trait="_HUDQR_X" /> </x>
+				<y> <copy src="globals()" trait="_HUDQR_Y" /> </y>
+				<locus> &true; </locus>
+				<visible> <copy src="globals()" trait="_HUDShowQR" /> </visible>
+				<rect name="QuestStages">
+					<id> &noglow_branch; </id>
+					<systemcolor> &hudmain; </systemcolor>
+					<width> 100 </width>
+					<height> 50 </height>
+					<x> 20 </x>
+					<y> 40 </y>
+					<locus> &true; </locus>
+					<_isQSRect> &true; </_isQSRect>
+				</rect>
+			</rect>
+			<template name="template_filled_checkbox">
+				<image name="filled_checkbox">
+					<visible> &false; </visible>
+					<alpha> 0 </alpha>
+					<filename> Interface\Shared\Marker\glow_square_filled_small.dds </filename>
+					<texatlas> Interface\InterfaceShared.tai </texatlas>
+					<width> 26 </width>
+					<height> 26 </height>
+					<x> -20 </x>
+					<y> 3 </y>
+					<locus> &true; </locus>
+					<_daY> <copy src="sibling(justify_left_text)" trait="_daY2" /> </_daY>
+					<image name="filled_checkbox_c">
+						<visible> <copy src="parent()" trait="visible" /> </visible>
+						<alpha> <copy src="parent()" trait="alpha" /> </alpha>
+						<filename> <copy src="parent()" trait="filename" /> </filename>
+						<texatlas> Interface\InterfaceShared.tai </texatlas>
+						<width> 26 </width>
+						<height> 26 </height>
+						<x>
+							<copy> -5 </copy>
+							<sub src="globals()" trait="_duiHUDOffset" />
+						</x>
+						<y>
+							<copy src="parent()" trait="_daY" />
+							<add> -3 </add> <!-- DarN CHECK -->
+						</y>
+						<brightness>
+							<copy> &uselocalcolor; </copy>
+							<add>
+								<copy> 255 </copy>
+								<onlyifnot src="globals()" trait="_HUDOverrideColor" />
+							</add>
+						</brightness>
+						<red> <copy src="globals()" trait="_HUDRed" /> </red>
+						<green> <copy src="globals()" trait="_HUDGreen" /> </green>
+						<blue> <copy src="globals()" trait="_HUDBlue" /> </blue>
+					</image>
+				</image>
+
+			</template>
+			<template name="template_checkbox">
+				<image name="checkbox">
+					<visible> &false; </visible>
+					<alpha> 0 </alpha>
+					<filename> Interface\Shared\Marker\glow_square_small.dds </filename>
+					<texatlas> Interface\InterfaceShared.tai </texatlas>
+					<width> 16 </width>
+					<height> 16 </height>
+					<x> -20 </x>
+					<y> 3 </y>
+					<locus> &true; </locus>
+				</image>
+			</template>
+			<!--=========== Quest added =========================-->
+ 			<rect name="qa_wrap">
+				<x>
+					<copy src="globals()" trait="_HUDQA_X" />
+					<sub src="globals()" trait="_duiHUDOffset" />
+				</x>
+				<y> <copy src="globals()" trait="_HUDQA_Y" /> </y>
+				<locus> &true; </locus>
+				<visible> <copy src="globals()" trait="_HUDShowQuestAdded" /> </visible>
+
+				<rect name="QuestAdded">
+					<id> &noglow_branch; </id>
+					<width> 100 </width>
+					<height> 150 </height>
+					<y> 80 </y>
+					<locus> &true; </locus>
+					<_isQARect> &true; </_isQARect>
+				</rect>
+			</rect>
+		</rect>
+	</rect>
+	<!--=========== Message =============================-->
+	<rect name="Msg_Wrap">
+		<x>
+			<copy src="globals()" trait="_duiHUDOffset" />
+			<add src="globals()" trait="_HUDMsg_X" />
+		</x>
+		<y> <copy src="globals()" trait="_HUDMsg_Y" /> </y>
+		<locus> &true; </locus>
+		<visible> <copy src="globals()" trait="_HUDShowMessages" /> </visible>
+		<rect name="Messages">
+			<id> &noglow_branch; </id>
+			<width> 460 </width> <!-- DarN 460 -->
+			<height> 45 </height> <!-- DarN 45 -->
+			<locus> &true; </locus>
+			<_isMsgRect> &true; </_isMsgRect>
+
+		</rect>
+	</rect>
+
+	<!--============ Subtitle ===========================-->
+ 	<rect name="ST_Wrap">
+		<x>
+			<copy src="globals()" trait="_duiHUDOffset" />
+			<add src="globals()" trait="_HUDSubtitles_X" />
+		</x>
+		<y> <copy src="globals()" trait="_HUDSubtitles_Y" /> </y>
+		<locus> &true; </locus>
+		<visible> <copy src="globals()" trait="_HUDShowSubtitles" /> </visible>
+		<rect name="Subtitles">
+			<id> &noglow_branch; </id>
+			<width> 800 </width>
+			<height> 110 </height>
+			<_isSTRect> &true; </_isSTRect>
+		</rect>
+
+	</rect>
+
+	<!--============ Info ===============================-->
+	<rect name="InfoWrap">
+		<x>
+			<copy src="globals()" trait="_duiHUDOffset" />
+			<add src="globals()" trait="_HUDInfo_X" />
+		</x>
+		<y> <copy src="globals()" trait="_HUDInfo_Y" /> </y>
+		<locus> &true; </locus>
+		<visible> <copy src="globals()" trait="_HUDShowInfo" /> </visible>
+
+		<rect name="Info">
+			<id> &noglow_branch; </id>
+			<_isInfoRect> &true; </_isInfoRect>
+			<width>
+				<copy> 320 </copy>
+				<mul src="globals()" trait="_duiscale_70" /> <!-- DarN _duiscale_60 -->
+			</width>
+			<height>
+				<copy> 80 </copy>
+				<mul src="globals()" trait="_duiscale_70" /> <!-- DarN _duiscale_60 -->
+			</height>
+
+			<rect name="justify_center_hotrect">
+				<include src="darn\text_box_hud.xml" />
+
+				<font> <copy src="globals()" trait="_HUDMeterFont" /> </font>
+				<justify> &center; </justify>
+				<_glow> &true; </_glow>
+				<visible> &false; </visible>
+
+				<_y> -50 </_y>
+				<user0> -50 </user0> <!-- DarN y -->
+				<x>
+					<copy src="me()" trait="_x" />
+					<sub src="globals()" trait="_duiHUDOffset" />
+					<sub>
+						<copy src="child(button_text)" trait="width" />
+						<div> 2 </div>
+					</sub>
+					<add>
+						<copy src="child(PCShortcutLabel)" trait="width" />
+						<div> 2 </div>
+						<onlyif src="child(PCShortcutLabel)" trait="visible" />
+					</add>
+					<add>
+						<copy src="child(xbox_button)" trait="width" />
+						<mul src="globals()" trait="_duiscale_70" />
+						<div> 2 </div>
+						<sub> 8 </sub>
+						<onlyif src="child(xbox_button)" trait="visible" />
+					</add>
+				</x>
+
+				<_verbuf> 10 </_verbuf>
+				<_line_alpha> 255 </_line_alpha>
+				<_xbox_button> &xbuttona; </_xbox_button>
+				<_PCButtonText></_PCButtonText>
+				<_button_placement> &left; </_button_placement>
+			</rect>
+		</rect>
+	</rect>
+
+	<!--=========== Hotkeys =============================-->
+	<rect name="LocWrap">
+		<x> <copy src="globals()" trait="_HUDHotKeys_X" /> </x>
+		<y> <copy src="globals()" trait="_HUDHotKeys_Y" /> </y>
+		<locus> &true; </locus>
+
+		<rect name="Hokeys">
+			<id> &noglow_branch; </id>
+			<systemcolor> &hudmain; </systemcolor>
+			<width> 300 </width>
+			<height> 300 </height>
+		</rect>
+	</rect>
+	<!--========= Region and Location text ==============-->
+	<rect name="LocWrap">
+		 <x>
+			<copy src="globals()" trait="_duiHUDOffset" />
+			<add src="globals()" trait="_HUDLoc_X" />
+		</x>
+		<y> <copy src="globals()" trait="_HUDLoc_Y" /> </y>
+		<locus> &true; </locus>
+		<visible> <copy src="globals()" trait="_HUDShowLoc" /> </visible>
+
+		<rect name="Region_Location">
+			<id> &noglow_branch; </id>
+			<width> 100 </width>
+			<height> 100 </height>
+			<locus> &true; </locus>
+			<_isLocation> &true; </_isLocation>
+		</rect>
+	</rect>
+	<!--========= XP Meter =============================-->
+	<rect name="XPWrap">
+		<x>
+			<copy src="globals()" trait="_HUDXP_X" />
+			<add>
+				<copy src="screen()" trait="width" />
+				<sub src="child(XPMeter)" trait="x" />
+				<sub>
+					<copy> 382 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</sub>
+			</add>
+		</x>
+		<y> <copy src="globals()" trait="_HUDXP_Y" /> </y>
+		<locus> &true; </locus>
+		<visible>
+			<copy src="globals()" trait="_HUDShowXP" />
+			<and> <not src="io()" trait="_xXP" /> </and>
+			<and> <not src="child(XPMeter)" trait="_lvlUpVisible" /> </and>
+			<or>
+				<copy src="globals()" trait="_HUDShowXP" />
+				<!-- <and src="io()" trait="_xXP" /> -->
+				<and src="child(XPMeter)" trait="_lvlUpVisible" />
+			</or>
+		</visible>
+
+		<rect name="XPMeter">
+			<depth> 10000 </depth>
+			<locus> &true; </locus>
+			<systemcolor> <copy src="globals()" trait="_duiHUDSysColor" /> </systemcolor>
+			<brightness> <copy src="globals()" trait="_duiHUDBrightness" /> </brightness>
+			<red> <copy src="globals()" trait="_HUDRed" /> </red>
+			<green> <copy src="globals()" trait="_HUDGreen" /> </green>
+			<blue> <copy src="globals()" trait="_HUDBlue" /> </blue>
+			<_lvlUpVisible>
+				<copy src="child(XPLevelUp)" trait="visible" />
+				<and>
+					<copy src="child(XPLevelUp)" trait="alpha" />
+					<gt> 0 </gt>
+				</and>
+			</_lvlUpVisible>
+			<image name="XPBracket">
+				<filename> Interface\HUD\glow_XP_bar_over.dds </filename>
+				<texatlas> Interface\InterfaceShared.tai </texatlas>
+				<width>
+					<copy> 512 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</width>
+				<height>
+					<copy> 256 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</height>
+				<visible> &false; </visible>
+				<alpha> 0 </alpha>
+				<!-- <brightness> <copy src="parent()" trait="brightness" /> </brightness> -->
+				<brightness> 255 </brightness>
+				<red> <copy src="parent()" trait="red" /> </red>
+				<green> <copy src="parent()" trait="green" /> </green>
+				<blue> <copy src="parent()" trait="blue" /> </blue>
+			</image>
+			<image name="XPPointer">
+				<!-- <filename> Interface\HUD\glow_XP_bar_pointer.dds </filename> -->
+				<filename> empty.dds </filename>
+				<texatlas> Interface\InterfaceShared.tai </texatlas>
+				<width> 64 </width>
+				<height> 64 </height>
+				<_x_min> 55 </_x_min>
+				<_x_max> 270 </_x_max>
+				<x> 65 </x>
+				<y> 0 </y>
+				<visible> &false; </visible>
+			</image>
+			<image name="XPPointer_Clone">
+				<filename> Interface\HUD\glow_XP_bar_pointer.dds </filename>
+				<texatlas> Interface\InterfaceShared.tai </texatlas>
+				<width>
+					<copy> 64 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</width>
+				<height>
+					<copy> 64 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</height>
+				<x>
+					<copy src="sibling(XPPointer)" trait="x" />
+					<mul src="globals()" trait="_duiscale" />
+				</x>
+				<visible> <copy src="sibling(XPPointer)" trait="visible" /> </visible>
+				<alpha> <copy src="sibling(XPPointer)" trait="alpha" /> </alpha>
+				<systemcolor> <copy src="parent()" trait="systemcolor" /> </systemcolor>
+				<brightness> <copy src="parent()" trait="brightness" /> </brightness>
+				<red> <copy src="parent()" trait="red" /> </red>
+				<green> <copy src="parent()" trait="green" /> </green>
+				<blue> <copy src="parent()" trait="blue" /> </blue>
+			</image>
+			<text name="XPAmount">
+				<x>
+					<!-- <copy> 315 </copy>
+					<mul src="globals()" trait="_duiscale" /> -->
+					<copy src="sibling(XPLabel)" trait="x" />
+					<sub src="sibling(XPLabel)" trait="width" />
+					<sub> 2 </sub>
+				</x>
+				<y>
+					<copy> 90 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</y>
+				<font> <copy src="globals()" trait="_HUDMeterFont" /> </font> <!-- DarN 8 -->
+				<justify> &right; </justify>
+				<visible> &false; </visible>
+				<brightness> <copy src="parent()" trait="brightness" /> </brightness>
+				<red> <copy src="parent()" trait="red" /> </red>
+				<green> <copy src="parent()" trait="green" /> </green>
+				<blue> <copy src="parent()" trait="blue" /> </blue>
+			</text>
+			<text name="XPLabel">
+				<x>
+					<copy> 350 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</x>
+				<y> <copy src="sibling(XPAmount)" trait="y" /> </y>
+				<font> 7 </font> <!-- DarN 7 -->
+				<justify> &right; </justify>
+				<string> &-sStatsXP; </string>
+				<visible> &false; </visible>
+				<font> <copy src="globals()" trait="_HUDMeterFont" /> </font>
+				<brightness> <copy src="parent()" trait="brightness" /> </brightness>
+				<red> <copy src="parent()" trait="red" /> </red>
+				<green> <copy src="parent()" trait="green" /> </green>
+				<blue> <copy src="parent()" trait="blue" /> </blue>
+			</text>
+			<text name="XPLastLevel">
+				<x>
+					<copy> 70 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</x>
+				<y>
+					<copy> 30 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</y>
+				<justify> &right; </justify>
+				<visible> &false; </visible>
+				<font> <copy src="globals()" trait="_HUDMeterFont" /> </font>
+				<brightness> <copy src="parent()" trait="brightness" /> </brightness>
+				<red> <copy src="parent()" trait="red" /> </red>
+				<green> <copy src="parent()" trait="green" /> </green>
+				<blue> <copy src="parent()" trait="blue" /> </blue>
+			</text>
+			<text name="XPNextLevel">
+				<x>
+					<copy> 315 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</x>
+				<y> <copy src="sibling(XPLastLevel)" trait="y" /> </y>
+				<visible> &false; </visible>
+				<font> <copy src="globals()" trait="_HUDMeterFont" /> </font>
+				<brightness> <copy src="parent()" trait="brightness" /> </brightness>
+				<red> <copy src="parent()" trait="red" /> </red>
+				<green> <copy src="parent()" trait="green" /> </green>
+				<blue> <copy src="parent()" trait="blue" /> </blue>
+			</text>
+			<text name="XPLevelUp">
+				<justify> &right; </justify>
+				<font> 8 </font>
+				<visible> &false; </visible>
+				<x> <!-- DarN 360 -->
+					<copy> 360 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</x>
+				<y> 70 </y>
+				<string> &-sLevelUp; </string>
+				<brightness> <copy src="parent()" trait="brightness" /> </brightness>
+				<red> <copy src="parent()" trait="red" /> </red>
+				<green> <copy src="parent()" trait="green" /> </green>
+				<blue> <copy src="parent()" trait="blue" /> </blue>
+			</text>
+		</rect>
+	</rect>
+	<!--========== Radiation Meter =======================-->
+	<rect name="RadWrap">
+		<locus> &true; </locus>
+		<x>
+			<copy> 50 </copy>
+			<add src="globals()" trait="_HUDRad_X" />
+		</x>
+		<y>
+			<copy> -37 </copy> <!-- DarN CHECK -->
+			<add src="globals()" trait="_HUDRad_Y" />
+		</y>
+		<visible>
+			<copy src="globals()" trait="_HUDShowRadiation" />
+			<and> <not src="io()" trait="_xRad" /> </and>
+		</visible>
+
+		<rect name="RadiationMeter">
+			<locus> &true; </locus>
+			<systemcolor> &hudalt; </systemcolor>
+			<width>
+				<copy> 367 </copy>
+				<mul src="globals()" trait="_duiscale" />
+			</width>
+			<height>
+				<copy> 60 </copy>
+				<mul src="globals()" trait="_duiscale" />
+			</height>
+			<image name="radiation_bracket">
+				<depth> 10 </depth>
+				<filename> Interface\HUD\glow_messages_radiation_seperator_right.dds </filename>
+				<!-- <texatlas> Interface\InterfaceShared.tai </texatlas> -->
+				<width> <copy src="me()" trait="filewidth" /> </width>
+				<height> <copy src="me()" trait="fileheight" /> </height>
+				<zoom> <copy src="globals()" trait="_duiHUDScale" /> </zoom>
+				<x>
+					<copy> -135 </copy> <!-- DarN needed for ptr to work -->
+					<mul src="globals()" trait="_duiscale" />
+				</x>
+				<alpha> 0 </alpha>
+				<visible> &true; </visible>
+			</image>
+			<image name="radiation_pointer">
+				<filename> Interface\HUD\glow_messages_radiation_seperator_arrow.dds </filename>
+				<texatlas> Interface\InterfaceShared.tai </texatlas>
+				<width> 46 </width>
+				<height> 24 </height>
+				<alpha> 0 </alpha>
+				<x> 15 </x>
+				<y> 25 </y>
+				<visible> &false; </visible> <!-- DarN true -->
+			</image>
+			<image name="radiation_ptr_clone">
+				<filename> Interface\HUD\glow_messages_radiation_seperator_arrow.dds </filename>
+				<texatlas> Interface\InterfaceShared.tai </texatlas>
+				<width>
+					<copy> 46 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</width>
+				<height>
+					<copy> 24 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</height>
+				<x>
+					<copy src="sibling(radiation_pointer)" trait="x" />
+					<mul src="globals()" trait="_duiscale" />
+				</x>
+				<y>
+					<copy src="sibling(radiation_pointer)" trait="y" />
+					<mul src="globals()" trait="_duiscale" />
+				</y>
+				<alpha> <copy src="sibling(radiation_pointer)" trait="alpha" /> </alpha>
+			</image>
+
+			<text name="radiation_text_value">
+				<x> <!-- DarN 237 -->
+					<copy src="sibling(radiation_text)" trait="x" />
+					<sub src="sibling(radiation_text)" trait="width" />
+					<sub> 4 </sub>
+				</x>
+				<y>
+					<copy> 65 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</y>
+				<alpha> 0 </alpha>
+				<font> <copy src="globals()" trait="_HUDMeterFont" /> </font>
+				<visible> &true; </visible>
+				<string></string>
+				<justify> &right; </justify>
+			</text>
+			<text name="radiation_text">
+				<x> <!-- DarN 245 -->
+					<copy src="parent()" trait="width" />
+					<sub> 15 </sub>
+				</x>
+				<y>
+					<copy> 65 </copy>
+					<mul src="globals()" trait="_duiscale" />
+				</y>
+				<justify> &right; </justify>
+				<alpha> 0 </alpha>
+				<font> <copy src="globals()" trait="_HUDMeterFont" /> </font>
+				<visible> &true; </visible>
+				<string></string>
+			</text>
+		</rect>
+	</rect>
+	<!--========= BREATH METER ==============================-->
+	<rect name="BMWrap">
+		<locus> &true; </locus>
+		<x> <copy src="globals()" trait="_HUDBM_X" /> </x>
+		<y> <copy src="globals()" trait="_HUDBM_Y" /> </y>
+		<visible> <copy src="globals()" trait="_HUDShowBM" /> </visible>
+		<nif name="BreathMeter">
+			<filename> Interface\HUD\AirTimer01.NIF</filename>
+			<animation> Forward </animation>
+			<visible> &true; </visible>
+			<alpha> 0 </alpha>
+			<width> 64 </width>
+			<height> 64 </height>
+			<systemcolor> <copy src="globals()" trait="_duiHUDSysColor" /> </systemcolor>
+			<brightness> <copy src="globals()" trait="_duiHUDBrightness" /> </brightness>
+			<red> <copy src="globals()" trait="_HUDRed" /> </red>
+			<green> <copy src="globals()" trait="_HUDGreen" /> </green>
+			<blue> <copy src="globals()" trait="_HUDBlue" /> </blue>
+		</nif>
+	</rect>
+	<!--========== Explosive indicator=======================-->
+	<rect name="Explosive_positioning_rect">
+		<locus> &true; </locus>
+	</rect>
+	<!--<text name="explosive_text">
+		<string> &-sExplosive; </string>
+		<font> 3 </font>.
+		<systemcolor> &hudalt; </systemcolor>
+		<justify> &center; </justify>
+		<visible> &false; </visible>
+		<alpha> 0 </alpha>
+	</text> -->
+	<!--========== Crippled Limb Indicator ==================-->
+	<rect name="CLIWrap">
+		<x> <copy src="globals()" trait="_HUDCLI_X" /> </x>
+		<y> <copy src="globals()" trait="_HUDCLI_Y" /> </y>
+		<locus> &true; </locus>
+		<visible> <copy src="globals()" trait="_HUDShowCLI" /> </visible>
+
+		<rect name="crippled_limb_indicator">
+			<locus> &true; </locus>
+			<visible> &false; </visible>
+
+			<image name="Head">
+				<brightness>
+					<copy src="globals()" trait="_duiHUDBrightness" />
+					<add>
+						<copy> 255 </copy>
+						<onlyif>
+							<copy src="me()" trait="systemcolor" />
+							<eq> &hudalt; </eq>
+							<and>
+								<copy src="globals()" trait="_duiHUDBrightness" />
+								<eq> &uselocalcolor; </eq>
+							</and>
+						</onlyif>
+					</add>
+				</brightness>
+				<red> <copy src="globals()" trait="_HUDRed" /> </red>
+				<green> <copy src="globals()" trait="_HUDGreen" /> </green>
+				<blue> <copy src="globals()" trait="_HUDBlue" /> </blue>
+				<filename> Interface\Stats\head.dds </filename>
+				<alpha> 0 </alpha>
+			</image>
+			<image name="Face">
+				<filename> Interface\Stats\face_00.dds </filename>
+				<brightness> <copy src="globals()" trait="_duiHUDBrightness" /> </brightness>
+				<red> <copy src="globals()" trait="_HUDRed" /> </red>
+				<green> <copy src="globals()" trait="_HUDGreen" /> </green>
+				<blue> <copy src="globals()" trait="_HUDBlue" /> </blue>
+				<alpha> 0 </alpha>
+			</image>
+			<image name="Torso">
+				<filename> Interface\Stats\torso.dds </filename>
+				<brightness>
+					<copy src="globals()" trait="_duiHUDBrightness" />
+					<add>
+						<copy> 255 </copy>
+						<onlyif>
+							<copy src="me()" trait="systemcolor" />
+							<eq> &hudalt; </eq>
+							<and>
+								<copy src="globals()" trait="_duiHUDBrightness" />
+								<eq> &uselocalcolor; </eq>
+							</and>
+						</onlyif>
+					</add>
+				</brightness>
+				<red> <copy src="globals()" trait="_HUDRed" /> </red>
+				<green> <copy src="globals()" trait="_HUDGreen" /> </green>
+				<blue> <copy src="globals()" trait="_HUDBlue" /> </blue>
+				<alpha> 0 </alpha>
+			</image>
+			<image name="Left_Arm">
+				<filename> Interface\Stats\left_arm.dds </filename>
+				<brightness>
+					<copy src="globals()" trait="_duiHUDBrightness" />
+					<add>
+						<copy> 255 </copy>
+						<onlyif>
+							<copy src="me()" trait="systemcolor" />
+							<eq> &hudalt; </eq>
+							<and>
+								<copy src="globals()" trait="_duiHUDBrightness" />
+								<eq> &uselocalcolor; </eq>
+							</and>
+						</onlyif>
+					</add>
+				</brightness>
+				<red> <copy src="globals()" trait="_HUDRed" /> </red>
+				<green> <copy src="globals()" trait="_HUDGreen" /> </green>
+				<blue> <copy src="globals()" trait="_HUDBlue" /> </blue>
+				<alpha> 0 </alpha>
+			</image>
+			<image name="Right_Arm">
+				<filename> Interface\Stats\right_arm.dds </filename>
+				<brightness>
+					<copy src="globals()" trait="_duiHUDBrightness" />
+					<add>
+						<copy> 255 </copy>
+						<onlyif>
+							<copy src="me()" trait="systemcolor" />
+							<eq> &hudalt; </eq>
+							<and>
+								<copy src="globals()" trait="_duiHUDBrightness" />
+								<eq> &uselocalcolor; </eq>
+							</and>
+						</onlyif>
+					</add>
+				</brightness>
+				<red> <copy src="globals()" trait="_HUDRed" /> </red>
+				<green> <copy src="globals()" trait="_HUDGreen" /> </green>
+				<blue> <copy src="globals()" trait="_HUDBlue" /> </blue>
+				<alpha> 0 </alpha>
+			</image>
+			<image name="Left_Leg">
+				<filename> Interface\Stats\left_leg.dds </filename>
+				<brightness>
+					<copy src="globals()" trait="_duiHUDBrightness" />
+					<add>
+						<copy> 255 </copy>
+						<onlyif>
+							<copy src="me()" trait="systemcolor" />
+							<eq> &hudalt; </eq>
+							<and>
+								<copy src="globals()" trait="_duiHUDBrightness" />
+								<eq> &uselocalcolor; </eq>
+							</and>
+						</onlyif>
+					</add>
+				</brightness>
+				<red> <copy src="globals()" trait="_HUDRed" /> </red>
+				<green> <copy src="globals()" trait="_HUDGreen" /> </green>
+				<blue> <copy src="globals()" trait="_HUDBlue" /> </blue>
+				<alpha> 0 </alpha>
+			</image>
+			<image name="Right_Leg">
+				<filename> Interface\Stats\right_leg.dds </filename>
+				<brightness>
+					<copy src="globals()" trait="_duiHUDBrightness" />
+					<add>
+						<copy> 255 </copy>
+						<onlyif>
+							<copy src="me()" trait="systemcolor" />
+							<eq> &hudalt; </eq>
+							<and>
+								<copy src="globals()" trait="_duiHUDBrightness" />
+								<eq> &uselocalcolor; </eq>
+							</and>
+						</onlyif>
+					</add>
+				</brightness>
+				<red> <copy src="globals()" trait="_HUDRed" /> </red>
+				<green> <copy src="globals()" trait="_HUDGreen" /> </green>
+				<blue> <copy src="globals()" trait="_HUDBlue" /> </blue>
+				<alpha> 0 </alpha>
+			</image>
+		</rect>
+	</rect>
+
+
+	<include src= "fwe\stealthmeter_dui.xml" />
+	<include src= "fwe\nvmeter_dui.xml" />
+
+</menu>
