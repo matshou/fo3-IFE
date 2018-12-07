@@ -1,0 +1,51 @@
+groups:
+  - name: 'default'
+plugins:
+  - name: 'DarkerInteriors - Fellout Patch.esp'
+    after:
+      - 'Fellout - DLC.esp'
+  - name: 'DarkerInteriors - UFP Patch.esp'
+    after:
+      - 'DarkerInteriors - Fellout Patch.esp'
+  - name: 'Fellout - Main.esp'
+    after:
+      - 'DarkerInteriors.esp'
+  - name: 'Fellout-BrokenSteel.esp'
+    after:
+      - name: 'lessviewdistance.esp'
+        display: 'lessviwdistance.esp'
+  - name: 'IFE - Miscellaneous.esp'
+    after:
+      - 'UUF3P - FWE Patch.esp'
+  - name: 'LessViewDistance Fellout Compatability Patch.esp'
+    after:
+      - 'Fellout-BrokenSteel.esp'
+  - name: 'lessviewdistance.esp'
+    after:
+      - 'Fellout-Full.esp'
+  - name: 'StreetLights_Light.esp'
+    after:
+      - 'MegatonLighting.esm'
+  - name: 'UUF3P - FWE Patch.esp'
+    after:
+      - 'FO3 Wanderers Edition - DLC The Pitt.esp'
+  - name: 'WeaponJamming.esp'
+    after:
+      - 'FO3 Wanderers Edition - Main File.esp'
+  - name: 'Xepha''s Dynamic Weather - Bonus.esp'
+    after:
+      - 'Xepha''s Dynamic Weather - Main.esp'
+  - name: 'Xepha''s Dynamic Weather - Main.esp'
+    after:
+      - 'DarkerInteriors - Fellout Patch.esp'
+      - 'Directors Chair - Fallout 3.esp'
+      - 'DYNAVISION - Dynamic Lens Effect.esp'
+  - name: 'Xepha''s Dynamic Weather - UFP CP.esp'
+    after:
+      - 'Xepha''s Dynamic Weather - Main.esp'
+  - name: 'Xepha''s Dynamic Weather - UFP Patch.esp'
+    after:
+      - 'Xepha''s Dynamic Weather - Main.esp'
+  - name: 'Xepha''s Dynamic Weather.esm'
+    after:
+      - 'MegatonLighting.esm'
