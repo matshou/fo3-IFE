@@ -1,6 +1,9 @@
 groups:
   - name: 'default'
 plugins:
+  - name: 'Clarity.esp'
+    after:
+      - 'IFE - Miscellaneous.esp'
   - name: 'DarkerInteriors - Fellout Patch.esp'
     after:
       - 'Fellout - DLC.esp'
@@ -14,6 +17,9 @@ plugins:
     after:
       - name: 'lessviewdistance.esp'
         display: 'lessviwdistance.esp'
+  - name: 'IFE - Ambient Filter.esp'
+    after:
+      - 'IFE - Miscellaneous.esp'
   - name: 'IFE - Miscellaneous.esp'
     after:
       - 'UUF3P - FWE Patch.esp'
