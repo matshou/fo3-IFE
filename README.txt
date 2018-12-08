@@ -33,7 +33,7 @@ List of public mods included:
  - High Quality Pip-Boy Icons ~ Genin32
 
 ---------------------------
-3. IFE - Visual Effects
+3. IFE - Visual Ambient
 ---------------------------
 This pack improves the Fallout visual experience.
 
@@ -45,10 +45,12 @@ Installation Requirements:
 
 List of public mods included:
 -----------------------------
- - Fellout ~ Hattix
+ - Realistic Bullet Speed ~ StuckInMyPants
+ - Alternative Megaton Lighting ~ Polcsi
+ - Fallout Street Lights ~ SpeedyB64/skaimy
  - Dynamic Weather ~ Xepha537
  - DarkerInteriors ~ joedoe2
- - Realistic Bullet Speed ~ StuckInMyPants
+ - Clarity ~ phoenix0113
 
 ---------------------------
 4. IFE - Miscellaneous
