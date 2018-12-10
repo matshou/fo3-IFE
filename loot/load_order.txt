@@ -1,37 +1,51 @@
   0  0     Fallout3.esm
   1  1     Anchorage.esm
   2  2     ThePitt.esm
-  3  3     BrokenSteel.esm
-  4  4     PointLookout.esm
-  5  5     Zeta.esm
-  6  6     Unofficial Fallout 3 Patch.esm
-  7  7     iHUD.esm
-  8  8     ImaginatorFO3.esp
-  9  9     CINEMATECH.esm
- 10  a     CALIBR.esm
- 11  b     CRAFT.esm
- 12  c     FO3 Wanderers Edition - Main File.esm
- 13  d     Xepha's Dynamic Weather.esm
- 14  e     FO3 Wanderers Edition - Alternate Travel.esp
- 15  f     FO3 Wanderers Edition - Main File.esp
- 16 10     FO3 Wanderers Edition - DLC Broken Steel.esp
- 17 11     FO3 Wanderers Edition - DLC Point Lookout.esp
- 18 12     FO3 Wanderers Edition - DLC Anchorage.esp
- 19 13     FO3 Wanderers Edition - DLC Mothership Zeta.esp
- 20 14     FO3 Wanderers Edition - DLC The Pitt.esp
- 21 15     UUF3P - FWE Patch.esp
- 22 16     IFE - Miscellaneous.esp
- 23 17     IFE - Ambient Filter.esp
- 24 18     CASM.esp
- 25 19     DarNifiedUIF3.esp
- 26 1a     WeaponJamming.esp
- 27 1b     FWE - Realistic Bullets.esp
+  3  3     StreetLights.esm
+  4  4     BrokenSteel.esm
+  5  5     PointLookout.esm
+  6  6     Zeta.esm
+  7  7     CALIBR.esm
+  8  8     CRAFT.esm
+  9  9     Unofficial Fallout 3 Patch.esm
+ 10  a     iHUD.esm
+ 11  b     FO3 Wanderers Edition - Main File.esm
+ 12  c     TheInstitute.esm
+ 13  d     ImaginatorFO3.esp
+ 14  e     CINEMATECH.esm
+ 15  f     Xepha's Dynamic Weather.esm
+ 16 10     FO3 Wanderers Edition - Alternate Travel.esp
+ 17 11     IFE - Fallout 3 Patch.esm
+ 18 12     CASM.esp
+ 19 13     Binoculars.esp
+ 20 14     WWM - Main File.esp
+ 21 15     FO3 Wanderers Edition - Main File.esp
+ 22 16     FO3 Wanderers Edition - DLC Anchorage.esp
+ 23 17     FO3 Wanderers Edition - DLC The Pitt.esp
+ 24 18     FO3 Wanderers Edition - DLC Broken Steel.esp
+ 25 19     FO3 Wanderers Edition - DLC Point Lookout.esp
+ 26 1a     FO3 Wanderers Edition - DLC Mothership Zeta.esp
+ 27 1b     UUF3P - FWE Patch.esp
+ 28 1c     StreetLights - UFP Patch.esp
+ 29 1d     StreetLights - IFE Patch.esp
+ 30 1e     IFE - Miscellaneous.esp
+ 31 1f     That Middle Aged Guy - Main File.esp
+ 32 20     That Middle Aged Guy - IFE CPatch.esp
+ 33 21     IFE - Ambient Filter.esp
+ 34 22     WWM - IFE CPatch.esp
+ 35 23     DarNifiedUIF3.esp
+ 36 24     IFE - User Interface.esp
+ 37 25     BBBackpacks-v1-1.esp
+ 38 26     DYNAVISION - Dynamic Lens Effect.esp
+ 39 27     Directors Chair - Fallout 3.esp
+ 40 28     IFE - Sound Effects.esp
+ 41 29     WeaponJamming.esp
+ 42 2a     FWE - Realistic Bullets.esp
            FO3 Wanderers Edition - Optional Restore Tracers.esp
            FO3 Wanderers Edition - Optional Restore Tracers (automatics only).esp
- 28 1c     FO3 Wanderers Edition - Optional VATS Halftime.esp
- 29 1d     IFE - User Interface.esp
- 30 1e     DYNAVISION - Dynamic Lens Effect.esp
- 31 1f     Directors Chair - Fallout 3.esp
- 32 20     Xepha's Dynamic Weather - Main.esp
- 33 21     Xepha's Dynamic Weather - Bonus.esp
- 34 22     Xepha's Dynamic Weather - UFP Patch.esp
+ 43 2b     FO3 Wanderers Edition - Optional VATS Halftime.esp
+ 44 2c     Xepha's Dynamic Weather - Main.esp
+ 45 2d     Xepha's Dynamic Weather - Bonus.esp
+ 46 2e     Megaton Lighting - XDW Edition.esp
+ 47 2f     Xepha's Dynamic Weather - UFP Patch.esp
+ 48 30     FO3 Merged Patch.esp

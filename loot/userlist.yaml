@@ -4,6 +4,9 @@ plugins:
   - name: 'Clarity.esp'
     after:
       - 'IFE - Miscellaneous.esp'
+  - name: 'CRAFT.esm'
+    after:
+      - 'CALIBR.esm'
   - name: 'DarkerInteriors - Fellout Patch.esp'
     after:
       - 'Fellout - DLC.esp'
@@ -17,41 +20,87 @@ plugins:
     after:
       - name: 'lessviewdistance.esp'
         display: 'lessviwdistance.esp'
+  - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
+    after:
+      - 'FO3 Wanderers Edition - Main File.esp'
+  - name: 'FO3 Wanderers Edition - DLC Broken Steel.esp'
+    after:
+      - 'FO3 Wanderers Edition - DLC The Pitt.esp'
+  - name: 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
+    after:
+      - 'FO3 Wanderers Edition - DLC Point Lookout.esp'
+  - name: 'FO3 Wanderers Edition - DLC Point Lookout.esp'
+    after:
+      - 'FO3 Wanderers Edition - DLC Broken Steel.esp'
+  - name: 'FO3 Wanderers Edition - DLC The Pitt.esp'
+    after:
+      - 'FO3 Wanderers Edition - DLC Anchorage.esp'
+  - name: 'FO3 Wanderers Edition - Main File.esp'
+    after:
+      - 'WWM - Main File.esp'
   - name: 'IFE - Ambient Filter.esp'
     after:
-      - 'IFE - Miscellaneous.esp'
+      - 'That Middle Aged Guy - IFE CPatch.esp'
   - name: 'IFE - Miscellaneous.esp'
     after:
-      - 'UUF3P - FWE Patch.esp'
+      - 'StreetLights - IFE Patch.esp'
   - name: 'LessViewDistance Fellout Compatability Patch.esp'
     after:
       - 'Fellout-BrokenSteel.esp'
   - name: 'lessviewdistance.esp'
     after:
       - 'Fellout-Full.esp'
+  - name: 'Megaton Lighting - XDW Edition.esp'
+    after:
+      - 'Xepha''s Dynamic Weather - Bonus.esp'
+  - name: 'StreetLights - IFE Patch.esp'
+    after:
+      - 'StreetLights - UFP Patch.esp'
+  - name: 'StreetLights - UFP Patch.esp'
+    after:
+      - 'UUF3P - FWE Patch.esp'
   - name: 'StreetLights_Light.esp'
     after:
       - 'MegatonLighting.esm'
+  - name: 'That Middle Aged Guy - IFE CPatch.esp'
+    after:
+      - 'That Middle Aged Guy - Main File.esp'
+  - name: 'That Middle Aged Guy - Main File.esp'
+    after:
+      - 'IFE - Miscellaneous.esp'
+  - name: 'That Middle Aged Guy.esp'
+    after:
+      - 'IFE - Miscellaneous.esp'
+  - name: 'Unofficial Fallout 3 Patch.esm'
+    after:
+      - name: 'CRAFT.esm'
+        display: 'CALIBR.esm'
   - name: 'UUF3P - FWE Patch.esp'
     after:
       - 'FO3 Wanderers Edition - DLC The Pitt.esp'
   - name: 'WeaponJamming.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
+  - name: 'WWM - FWE Patch.esp'
+    after:
+      - 'UUF3P - FWE Patch.esp'
+  - name: 'WWM - Main File.esp'
+    after:
+      - 'Binoculars.esp'
   - name: 'Xepha''s Dynamic Weather - Bonus.esp'
     after:
       - 'Xepha''s Dynamic Weather - Main.esp'
   - name: 'Xepha''s Dynamic Weather - Main.esp'
     after:
-      - 'DarkerInteriors - Fellout Patch.esp'
       - 'Directors Chair - Fallout 3.esp'
       - 'DYNAVISION - Dynamic Lens Effect.esp'
+      - 'StreetLights - UFP Patch.esp'
   - name: 'Xepha''s Dynamic Weather - UFP CP.esp'
     after:
       - 'Xepha''s Dynamic Weather - Main.esp'
   - name: 'Xepha''s Dynamic Weather - UFP Patch.esp'
     after:
-      - 'Xepha''s Dynamic Weather - Main.esp'
+      - 'Megaton Lighting - XDW Edition.esp'
   - name: 'Xepha''s Dynamic Weather.esm'
     after:
       - 'MegatonLighting.esm'
