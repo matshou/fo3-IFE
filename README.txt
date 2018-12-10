@@ -67,3 +67,14 @@ List of public mods included:
  - Radio Ownership Fix ~ pitabox987
  - Safe Regulator HQ ~ Talthybius
  - Old Barkskin ~ daisho
+
+---------------------------
+5. IFE - Story Time
+---------------------------
+This pack improves and brings new story elements to the game.
+Includes compatibility patches for FWE and UFP.
+
+List of public mods included:
+-----------------------------
+ - We Want More - WWM ~ onowrouzi
+ - THAT middle-aged guy ~ vegaswanderer
