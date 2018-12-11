@@ -59,6 +59,7 @@ This pack includes various flavour mods that tweak the game to improve existing 
 
 List of public mods included:
 -----------------------------
+ - Less suspicious NPCs ~ bluebellfairy
  - Scribe Yearling takes all Pre-War Books ~ Yukichigai
  - Double Barrelled Shotgun Fix ~ Feltorn Von Dentai
  - Confessor Cromwell has a Break ~ Sharkoon66
