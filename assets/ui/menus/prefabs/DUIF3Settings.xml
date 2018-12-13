@@ -159,12 +159,12 @@
 <_HUDBM_Y> 0 </_HUDBM_Y>						<!-- [0]										-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Messages ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<_HUDMsg_X> 0 </_HUDMsg_X>						<!-- [0] Rel. original position					-->
-<_HUDMsg_Y> -15 </_HUDMsg_Y>					<!-- [-15]										-->
-<_HUDShowMsgBracket> 1 </_HUDShowMsgBracket>	<!-- [1] Show bracket art?						-->
+<_HUDMsg_X> -20 </_HUDMsg_X>					<!-- [0] Rel. original position					-->
+<_HUDMsg_Y> -26 </_HUDMsg_Y>					<!-- [-15]										-->
+<_HUDShowMsgBracket> 0 </_HUDShowMsgBracket>	<!-- [1] Show bracket art?						-->
 <_HUDShowMsgIcon> 1 </_HUDShowMsgIcon>			<!-- [1] Show message icon?						-->
 
-<_HUDShowMessages>   0 </_HUDShowMessages>		<!-- [1]										-->
+<_HUDShowMessages> 0 </_HUDShowMessages>		<!-- [1]										-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Info ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <_HUDShowInfo> 1 </_HUDShowInfo>				<!-- [1]										-->
 <_HUDInfo_X> 0 </_HUDInfo_X>					<!-- [0] Rel. original position					-->
