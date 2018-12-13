@@ -164,7 +164,7 @@
 <_HUDShowMsgBracket> 0 </_HUDShowMsgBracket>	<!-- [1] Show bracket art?						-->
 <_HUDShowMsgIcon> 1 </_HUDShowMsgIcon>			<!-- [1] Show message icon?						-->
 
-<_HUDShowMessages> 0 </_HUDShowMessages>		<!-- [1]										-->
+<_HUDShowMessages> 1 </_HUDShowMessages>		<!-- [1]										-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Info ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <_HUDShowInfo> 1 </_HUDShowInfo>				<!-- [1]										-->
 <_HUDInfo_X> 0 </_HUDInfo_X>					<!-- [0] Rel. original position					-->
