@@ -1,4 +1,7 @@
 
+Many of the mods included have had their directories and plugins cleaned and sorted.
+Some have been directly edited to provide compatibility, while others were supported with patches.
+
 ---------------------------
 1. IFE - Sound Effects
 ---------------------------
@@ -79,3 +82,14 @@ List of public mods included:
 -----------------------------
  - We Want More - WWM ~ onowrouzi
  - THAT middle-aged guy ~ vegaswanderer
+
+---------------------------
+6. IFE - Equipment
+---------------------------
+This pack adds new and interesting equippable items.
+Add 'fScopeScissorAmount=0' entry under 'Display' in fallout.ini to remove zoom cut-off screen.
+
+List of public mods included:
+-----------------------------
+ - Binoculars ~ atlanticmongrel
+ - Better Balanced Backpacks ~ Chesko
