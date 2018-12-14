@@ -1,6 +1,9 @@
 groups:
   - name: 'default'
 plugins:
+  - name: 'CINEMATECH.esm'
+    after:
+      - 'ImaginatorFO3.esp'
   - name: 'Clarity.esp'
     after:
       - 'IFE - Miscellaneous.esp'
@@ -13,6 +16,15 @@ plugins:
   - name: 'DarkerInteriors - UFP Patch.esp'
     after:
       - 'DarkerInteriors - Fellout Patch.esp'
+  - name: 'DarNifiedUIF3.esp'
+    after:
+      - 'WWM - IFE CPatch.esp'
+  - name: 'Directors Chair - Fallout 3.esp'
+    after:
+      - 'DYNAVISION - Dynamic Lens Effect.esp'
+  - name: 'DYNAVISION - Dynamic Lens Effect.esp'
+    after:
+      - 'IFE - User Interface.esp'
   - name: 'Fellout - Main.esp'
     after:
       - 'DarkerInteriors.esp'
@@ -20,6 +32,12 @@ plugins:
     after:
       - name: 'lessviewdistance.esp'
         display: 'lessviwdistance.esp'
+  - name: 'FO3 Merged Patch.esp'
+    after:
+      - 'Xepha''s Dynamic Weather - UFP Patch.esp'
+  - name: 'FO3 Wanderers Edition - Alternate Travel.esp'
+    after:
+      - 'Xepha''s Dynamic Weather.esm'
   - name: 'FO3 Wanderers Edition - DLC Anchorage.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
@@ -35,15 +53,49 @@ plugins:
   - name: 'FO3 Wanderers Edition - DLC The Pitt.esp'
     after:
       - 'FO3 Wanderers Edition - DLC Anchorage.esp'
+  - name: 'FO3 Wanderers Edition - Main File.esm'
+    after:
+      - 'Unofficial Fallout 3 Patch.esm'
   - name: 'FO3 Wanderers Edition - Main File.esp'
     after:
+      - 'KillableChildren.esp'
       - 'WWM - Main File.esp'
+  - name: 'FO3 Wanderers Edition - Optional Restore Tracers (automatics only).esp'
+    after:
+      - 'FO3 Wanderers Edition - Optional Restore Tracers.esp'
+  - name: 'FO3 Wanderers Edition - Optional Restore Tracers.esp'
+    after:
+      - 'FO3 Wanderers Edition - Realistic Bullets.esp'
+  - name: 'FO3 Wanderers Edition - Optional VATS Halftime.esp'
+    after:
+      - 'FO3 Wanderers Edition - Optional Restore Tracers (automatics only).esp'
+  - name: 'FO3 Wanderers Edition - Realistic Bullets.esp'
+    after:
+      - 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
   - name: 'IFE - Ambient Filter.esp'
     after:
-      - 'That Middle Aged Guy - IFE CPatch.esp'
+      - 'IFE - The Institute CPatch.esp'
+  - name: 'IFE - Fallout 3 Patch.esm'
+    after:
+      - 'FO3 Wanderers Edition - Alternate Travel.esp'
   - name: 'IFE - Miscellaneous.esp'
     after:
       - 'StreetLights - IFE Patch.esp'
+  - name: 'IFE - Sound Effects.esp'
+    after:
+      - 'Directors Chair - Fallout 3.esp'
+  - name: 'IFE - The Institute CPatch.esp'
+    after:
+      - 'That Middle Aged Guy - Main File.esp'
+  - name: 'IFE - User Interface.esp'
+    after:
+      - 'DarNifiedUIF3.esp'
+  - name: 'KillableChildren - UFP CPatch.esp'
+    after:
+      - 'KillableChildren.esp'
+  - name: 'Leather Backpack.esp'
+    after:
+      - 'BBBackpacks.esp'
   - name: 'LessViewDistance Fellout Compatability Patch.esp'
     after:
       - 'Fellout-BrokenSteel.esp'
@@ -53,6 +105,15 @@ plugins:
   - name: 'Megaton Lighting - XDW Edition.esp'
     after:
       - 'Xepha''s Dynamic Weather - Bonus.esp'
+  - name: 'NEOFACES - IFE CPatch.esp'
+    after:
+      - 'NEOFACES.esp'
+  - name: 'NEOFACES - KChild CPatch.esp'
+    after:
+      - 'NEOFACES - IFE CPatch.esp'
+  - name: 'NEOFACES.esp'
+    after:
+      - 'FO3 Wanderers Edition - Optional VATS Halftime.esp'
   - name: 'StreetLights - IFE Patch.esp'
     after:
       - 'StreetLights - UFP Patch.esp'
@@ -71,6 +132,9 @@ plugins:
   - name: 'That Middle Aged Guy.esp'
     after:
       - 'IFE - Miscellaneous.esp'
+  - name: 'TheInstitute.esm'
+    after:
+      - 'FO3 Wanderers Edition - Main File.esm'
   - name: 'Unofficial Fallout 3 Patch.esm'
     after:
       - name: 'CRAFT.esm'
@@ -84,6 +148,9 @@ plugins:
   - name: 'WWM - FWE Patch.esp'
     after:
       - 'UUF3P - FWE Patch.esp'
+  - name: 'WWM - IFE CPatch.esp'
+    after:
+      - 'IFE - Ambient Filter.esp'
   - name: 'WWM - Main File.esp'
     after:
       - 'Binoculars.esp'
@@ -93,8 +160,6 @@ plugins:
   - name: 'Xepha''s Dynamic Weather - Main.esp'
     after:
       - 'Directors Chair - Fallout 3.esp'
-      - 'DYNAVISION - Dynamic Lens Effect.esp'
-      - 'StreetLights - UFP Patch.esp'
   - name: 'Xepha''s Dynamic Weather - UFP CP.esp'
     after:
       - 'Xepha''s Dynamic Weather - Main.esp'
@@ -103,4 +168,4 @@ plugins:
       - 'Megaton Lighting - XDW Edition.esp'
   - name: 'Xepha''s Dynamic Weather.esm'
     after:
-      - 'MegatonLighting.esm'
+      - 'CINEMATECH.esm'
