@@ -35,25 +35,26 @@
  32 20     FO3 Wanderers Edition - Optional VATS Halftime.esp
  33 21     WeaponJamming.esp
  34 22     UUF3P - FWE Patch.esp
-           Expanded Vendor Inventory.esp
- 35 23     NEOFACES.esp
- 36 24     NEOFACES - IFE CPatch.esp
- 37 25     NEOFACES - KChild CPatch.esp
- 38 26     IFE - Equipment.esp
- 39 27     StreetLights - UFP Patch.esp
- 40 28     StreetLights - IFE Patch.esp
- 41 29     IFE - Miscellaneous.esp
- 42 2a     That Middle Aged Guy - Main File.esp
- 43 2b     That Middle Aged Guy - IFE CPatch.esp
- 44 2c     IFE - The Institute CPatch.esp
- 45 2d     IFE - Ambient Filter.esp
- 46 2e     WWM - IFE CPatch.esp
- 47 2f     DarNifiedUIF3.esp
- 48 30     IFE - User Interface.esp
- 49 31     DYNAVISION - Dynamic Lens Effect.esp
- 50 32     Directors Chair - Fallout 3.esp
- 51 33     Xepha's Dynamic Weather - Main.esp
- 52 34     Xepha's Dynamic Weather - Bonus.esp
- 53 35     Megaton Lighting - XDW Edition.esp
- 54 36     Xepha's Dynamic Weather - UFP Patch.esp
- 55 37     FO3 Merged Patch.esp
+ 35 23     UPP - IFE Edition.esp
+ 36 24     UPP - FWE CPatch.esp
+ 37 25     NEOFACES.esp
+ 38 26     NEOFACES - IFE CPatch.esp
+ 39 27     NEOFACES - KChild CPatch.esp
+ 40 28     IFE - Equipment.esp
+ 41 29     StreetLights - UFP Patch.esp
+ 42 2a     StreetLights - IFE Patch.esp
+ 43 2b     IFE - Miscellaneous.esp
+ 44 2c     That Middle Aged Guy - Main File.esp
+ 45 2d     That Middle Aged Guy - IFE CPatch.esp
+ 46 2e     IFE - The Institute CPatch.esp
+ 47 2f     IFE - Ambient Filter.esp
+ 48 30     WWM - IFE CPatch.esp
+ 49 31     DarNifiedUIF3.esp
+ 50 32     IFE - User Interface.esp
+ 51 33     DYNAVISION - Dynamic Lens Effect.esp
+ 52 34     Directors Chair - Fallout 3.esp
+ 53 35     Xepha's Dynamic Weather - Main.esp
+ 54 36     Xepha's Dynamic Weather - Bonus.esp
+ 55 37     Megaton Lighting - XDW Edition.esp
+ 56 38     Xepha's Dynamic Weather - UFP Patch.esp
+ 57 39     FO3 Merged Patch.esp

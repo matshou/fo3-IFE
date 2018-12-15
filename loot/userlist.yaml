@@ -113,7 +113,7 @@ plugins:
       - 'NEOFACES - IFE CPatch.esp'
   - name: 'NEOFACES.esp'
     after:
-      - 'FO3 Wanderers Edition - Optional VATS Halftime.esp'
+      - 'UPP - FWE CPatch.esp'
   - name: 'StreetLights - IFE Patch.esp'
     after:
       - 'StreetLights - UFP Patch.esp'
@@ -139,6 +139,12 @@ plugins:
     after:
       - name: 'CRAFT.esm'
         display: 'CALIBR.esm'
+  - name: 'UPP - FWE CPatch.esp'
+    after:
+      - 'UPP - IFE Edition.esp'
+  - name: 'UPP - IFE Edition.esp'
+    after:
+      - 'UUF3P - FWE Patch.esp'
   - name: 'UUF3P - FWE Patch.esp'
     after:
       - 'FO3 Wanderers Edition - DLC The Pitt.esp'
