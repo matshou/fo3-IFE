@@ -91,5 +91,6 @@ Add 'fScopeScissorAmount=0' entry under 'Display' in fallout.ini to remove zoom 
 
 List of public mods included:
 -----------------------------
+ - Gunny Sack ~ Ssenkrad
  - Binoculars ~ atlanticmongrel
  - Better Balanced Backpacks ~ Chesko
