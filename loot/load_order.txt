@@ -35,26 +35,33 @@
  32 20     FO3 Wanderers Edition - Optional VATS Halftime.esp
  33 21     WeaponJamming.esp
  34 22     UUF3P - FWE Patch.esp
- 35 23     UPP - IFE Edition.esp
- 36 24     UPP - FWE CPatch.esp
- 37 25     NEOFACES.esp
- 38 26     NEOFACES - IFE CPatch.esp
- 39 27     NEOFACES - KChild CPatch.esp
- 40 28     IFE - Equipment.esp
- 41 29     StreetLights - UFP Patch.esp
- 42 2a     StreetLights - IFE Patch.esp
- 43 2b     IFE - Miscellaneous.esp
- 44 2c     That Middle Aged Guy - Main File.esp
- 45 2d     That Middle Aged Guy - IFE CPatch.esp
- 46 2e     IFE - The Institute CPatch.esp
- 47 2f     IFE - Ambient Filter.esp
- 48 30     WWM - IFE CPatch.esp
- 49 31     DarNifiedUIF3.esp
- 50 32     IFE - User Interface.esp
- 51 33     DYNAVISION - Dynamic Lens Effect.esp
- 52 34     Directors Chair - Fallout 3.esp
- 53 35     Xepha's Dynamic Weather - Main.esp
- 54 36     Xepha's Dynamic Weather - Bonus.esp
- 55 37     Megaton Lighting - XDW Edition.esp
- 56 38     Xepha's Dynamic Weather - UFP Patch.esp
- 57 39     FO3 Merged Patch.esp
+ 35 23     TheInstitute - FWE Patch.esp
+ 36 24     UPP - IFE Edition.esp
+ 37 25     UPP - FWE CPatch.esp
+ 38 26     NEOFACES.esp
+ 39 27     NEOFACES - IFE CPatch.esp
+ 40 28     NEOFACES - KChild CPatch.esp
+ 41 29     IFE - Equipment.esp
+ 42 2a     StreetLights - UFP Patch.esp
+ 43 2b     StreetLights - IFE Patch.esp
+ 44 2c     IFE - Miscellaneous.esp
+ 45 2d     That Middle Aged Guy - Main File.esp
+ 46 2e     That Middle Aged Guy - IFE CPatch.esp
+ 47 2f     IFE - The Institute CPatch.esp
+ 48 30     Realistic Interior Lighting.esp
+ 49 31     Interior Fog Remover.esp
+ 50 32     WWM - IFE CPatch.esp
+ 51 33     DarNifiedUIF3.esp
+ 52 34     IFE - User Interface.esp
+ 53 35     DYNAVISION - Dynamic Lens Effect.esp
+ 54 36     Directors Chair - Fallout 3.esp
+ 55 37     IFE - Sound Effects.esp
+ 56 38     Xepha's Dynamic Weather - Main.esp
+ 57 39     Xepha's Dynamic Weather - Bonus.esp
+ 58 3a     Megaton Lighting - XDW Edition.esp
+ 59 3b     Xepha's Dynamic Weather - UFP Patch.esp
+ 60 3c     EBT - Enhanced Blood Main.esp
+ 61 3d     EBT - Smaller Spatters Realistic.esp
+ 62 3e     EBT - Smaller Wounds.esp
+ 63 3f     FO3 Merged Patch.esp
+ 64 40     IFE - Visual Preset.esp

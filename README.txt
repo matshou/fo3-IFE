@@ -48,12 +48,11 @@ Installation Requirements:
 
 List of public mods included:
 -----------------------------
- - Realistic Bullet Speed ~ StuckInMyPants
  - Alternative Megaton Lighting ~ Polcsi
  - Fallout Street Lights ~ SpeedyB64/skaimy
  - Dynamic Weather ~ Xepha537
- - DarkerInteriors ~ joedoe2
- - Clarity ~ phoenix0113
+ - Realistic Interior Lighting ~ Scarecrow23
+ - Interior Fog Remover ~ RandomUnit
 
 ---------------------------
 4. IFE - Miscellaneous
@@ -62,6 +61,7 @@ This pack includes various flavour mods that tweak the game to improve existing 
 
 List of public mods included:
 -----------------------------
+ - Realistic Bullet Speed ~ StuckInMyPants
  - Less suspicious NPCs ~ bluebellfairy
  - Scribe Yearling takes all Pre-War Books ~ Yukichigai
  - Double Barrelled Shotgun Fix ~ Feltorn Von Dentai

@@ -25,6 +25,12 @@ plugins:
   - name: 'DYNAVISION - Dynamic Lens Effect.esp'
     after:
       - 'IFE - User Interface.esp'
+  - name: 'EBT - Smaller Spatters Realistic.esp'
+    after:
+      - 'EBT - Enhanced Blood Main.esp'
+  - name: 'EBT - Smaller Wounds.esp'
+    after:
+      - 'EBT - Smaller Spatters Realistic.esp'
   - name: 'Fellout - Main.esp'
     after:
       - 'DarkerInteriors.esp'
@@ -90,6 +96,12 @@ plugins:
   - name: 'IFE - User Interface.esp'
     after:
       - 'DarNifiedUIF3.esp'
+  - name: 'IFE - Visual Preset.esp'
+    after:
+      - 'FO3 Merged Patch.esp'
+  - name: 'Interior Fog Remover.esp'
+    after:
+      - 'Realistic Interior Lighting.esp'
   - name: 'KillableChildren - UFP CPatch.esp'
     after:
       - 'KillableChildren.esp'
@@ -132,6 +144,9 @@ plugins:
   - name: 'That Middle Aged Guy.esp'
     after:
       - 'IFE - Miscellaneous.esp'
+  - name: 'TheInstitute - FWE Patch.esp'
+    after:
+      - 'UUF3P - FWE Patch.esp'
   - name: 'TheInstitute.esm'
     after:
       - 'FO3 Wanderers Edition - Main File.esm'
@@ -144,7 +159,7 @@ plugins:
       - 'UPP - IFE Edition.esp'
   - name: 'UPP - IFE Edition.esp'
     after:
-      - 'UUF3P - FWE Patch.esp'
+      - 'TheInstitute - FWE Patch.esp'
   - name: 'UUF3P - FWE Patch.esp'
     after:
       - 'FO3 Wanderers Edition - DLC The Pitt.esp'
