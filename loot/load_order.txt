@@ -15,13 +15,14 @@
  14  e     CINEMATECH.esm
  15  f     Xepha's Dynamic Weather.esm
  16 10     FO3 Wanderers Edition - Alternate Travel.esp
- 17 11     IFE - Fallout 3 Patch.esm
+ 17 11     IFE - Main File.esm
  18 12     FCOMaster.esm
  19 13     FCO - UFP CPatch.esp
- 20 14     WWM - Main File.esp
- 21 15     KillableChildren.esp
- 22 16     KillableChildren - UFP CPatch.esp
- 23 17     FasterWaiting.esp
+ 20 14     IFE - Fallout 3 Patch.esp
+ 21 15     WWM - Main File.esp
+ 22 16     KillableChildren.esp
+ 23 17     KillableChildren - UFP CPatch.esp
+           FasterWaiting.esp
  24 18     CASM.esp
  25 19     FO3 Wanderers Edition - Main File.esp
  26 1a     FO3 Wanderers Edition - DLC Anchorage.esp
@@ -41,9 +42,9 @@
  38 26     NEOFACES.esp
  39 27     NEOFACES - IFE CPatch.esp
  40 28     NEOFACES - KChild CPatch.esp
- 41 29     IFE - Equipment.esp
- 42 2a     StreetLights - UFP Patch.esp
- 43 2b     StreetLights - IFE Patch.esp
+ 41 29     StreetLights - UFP Patch.esp
+ 42 2a     StreetLights - IFE Patch.esp
+ 43 2b     IFE - Equipment.esp
  44 2c     IFE - Miscellaneous.esp
  45 2d     That Middle Aged Guy - Main File.esp
  46 2e     That Middle Aged Guy - IFE CPatch.esp
@@ -65,3 +66,4 @@
  62 3e     EBT - Smaller Wounds.esp
  63 3f     FO3 Merged Patch.esp
  64 40     IFE - Visual Preset.esp
+ 65 41     IFE - PiPBoy Light.esp

@@ -31,6 +31,9 @@ plugins:
   - name: 'EBT - Smaller Wounds.esp'
     after:
       - 'EBT - Smaller Spatters Realistic.esp'
+  - name: 'FCO - UFP CPatch.esp'
+    after:
+      - 'FCOMaster.esm'
   - name: 'Fellout - Main.esp'
     after:
       - 'DarkerInteriors.esp'
@@ -83,10 +86,19 @@ plugins:
       - 'IFE - The Institute CPatch.esp'
   - name: 'IFE - Fallout 3 Patch.esm'
     after:
+      - 'IFE - Main File.esm'
+  - name: 'IFE - Fallout 3 Patch.esp'
+    after:
+      - 'FCO - UFP CPatch.esp'
+  - name: 'IFE - Main File.esm'
+    after:
       - 'FO3 Wanderers Edition - Alternate Travel.esp'
   - name: 'IFE - Miscellaneous.esp'
     after:
       - 'StreetLights - IFE Patch.esp'
+  - name: 'IFE - PiPBoy Light.esp'
+    after:
+      - 'IFE - Visual Preset.esp'
   - name: 'IFE - Sound Effects.esp'
     after:
       - 'Directors Chair - Fallout 3.esp'
@@ -105,6 +117,9 @@ plugins:
   - name: 'KillableChildren - UFP CPatch.esp'
     after:
       - 'KillableChildren.esp'
+  - name: 'KillableChildren.esp'
+    after:
+      - 'WWM - Main File.esp'
   - name: 'Leather Backpack.esp'
     after:
       - 'BBBackpacks.esp'
@@ -126,6 +141,9 @@ plugins:
   - name: 'NEOFACES.esp'
     after:
       - 'UPP - FWE CPatch.esp'
+  - name: 'Realistic Interior Lighting.esp'
+    after:
+      - 'IFE - The Institute CPatch.esp'
   - name: 'StreetLights - IFE Patch.esp'
     after:
       - 'StreetLights - UFP Patch.esp'
@@ -174,7 +192,7 @@ plugins:
       - 'IFE - Ambient Filter.esp'
   - name: 'WWM - Main File.esp'
     after:
-      - 'Binoculars.esp'
+      - 'IFE - Fallout 3 Patch.esp'
   - name: 'Xepha''s Dynamic Weather - Bonus.esp'
     after:
       - 'Xepha''s Dynamic Weather - Main.esp'
