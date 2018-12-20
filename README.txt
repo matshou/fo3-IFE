@@ -82,6 +82,7 @@ List of public mods included:
 -----------------------------
  - We Want More - WWM ~ onowrouzi
  - THAT middle-aged guy ~ vegaswanderer
+ - Power of The Atom ~ Leviathan1753
 
 ---------------------------
 6. IFE - Equipment
