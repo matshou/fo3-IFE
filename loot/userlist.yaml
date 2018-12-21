@@ -1,6 +1,9 @@
 groups:
   - name: 'default'
 plugins:
+  - name: 'CASM.esp'
+    after:
+      - 'IFE - Fallout 3 Patch.esp'
   - name: 'CINEMATECH.esm'
     after:
       - 'ImaginatorFO3.esp'
@@ -67,7 +70,7 @@ plugins:
       - 'Unofficial Fallout 3 Patch.esm'
   - name: 'FO3 Wanderers Edition - Main File.esp'
     after:
-      - 'KillableChildren.esp'
+      - 'KillableChildren - UFP CPatch.esp'
       - 'WWM - Main File.esp'
   - name: 'FO3 Wanderers Edition - Optional Restore Tracers (automatics only).esp'
     after:
@@ -84,6 +87,9 @@ plugins:
   - name: 'IFE - Ambient Filter.esp'
     after:
       - 'IFE - The Institute CPatch.esp'
+  - name: 'IFE - Directors Cut.esp'
+    after:
+      - 'Directors Chair - Fallout 3.esp'
   - name: 'IFE - Fallout 3 Patch.esm'
     after:
       - 'IFE - Main File.esm'
@@ -99,9 +105,12 @@ plugins:
   - name: 'IFE - PiPBoy Light.esp'
     after:
       - 'IFE - Visual Preset.esp'
+  - name: 'IFE - Power of The Atom.esp'
+    after:
+      - 'IFE - Miscellaneous.esp'
   - name: 'IFE - Sound Effects.esp'
     after:
-      - 'Directors Chair - Fallout 3.esp'
+      - 'IFE - Directors Cut.esp'
   - name: 'IFE - The Institute CPatch.esp'
     after:
       - 'That Middle Aged Guy - Main File.esp'
@@ -111,6 +120,10 @@ plugins:
   - name: 'IFE - Visual Preset.esp'
     after:
       - 'FO3 Merged Patch.esp'
+  - name: 'iHUD.esm'
+    after:
+      - 'CINEMATECH.esm'
+      - 'Zeta.esm'
   - name: 'Interior Fog Remover.esp'
     after:
       - 'Realistic Interior Lighting.esp'
@@ -144,6 +157,12 @@ plugins:
   - name: 'Realistic Interior Lighting.esp'
     after:
       - 'IFE - The Institute CPatch.esp'
+  - name: 'RH_FWE_Bridge.esp'
+    after:
+      - 'UUF3P - FWE Patch.esp'
+  - name: 'RH_IRONSIGHTS.esm'
+    after:
+      - 'FO3 Wanderers Edition - Main File.esm'
   - name: 'StreetLights - IFE Patch.esp'
     after:
       - 'StreetLights - UFP Patch.esp'
@@ -158,7 +177,7 @@ plugins:
       - 'That Middle Aged Guy - Main File.esp'
   - name: 'That Middle Aged Guy - Main File.esp'
     after:
-      - 'IFE - Miscellaneous.esp'
+      - 'IFE - Power of The Atom.esp'
   - name: 'That Middle Aged Guy.esp'
     after:
       - 'IFE - Miscellaneous.esp'
@@ -192,13 +211,14 @@ plugins:
       - 'IFE - Ambient Filter.esp'
   - name: 'WWM - Main File.esp'
     after:
+      - 'CASM.esp'
       - 'IFE - Fallout 3 Patch.esp'
   - name: 'Xepha''s Dynamic Weather - Bonus.esp'
     after:
       - 'Xepha''s Dynamic Weather - Main.esp'
   - name: 'Xepha''s Dynamic Weather - Main.esp'
     after:
-      - 'Directors Chair - Fallout 3.esp'
+      - 'IFE - Sound Effects.esp'
   - name: 'Xepha''s Dynamic Weather - UFP CP.esp'
     after:
       - 'Xepha''s Dynamic Weather - Main.esp'
