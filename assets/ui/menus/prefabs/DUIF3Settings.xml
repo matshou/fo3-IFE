@@ -232,9 +232,9 @@
 <_VQueueFont> 6 </_VQueueFont>					<!-- [6] Font to use in the action queue list	-->
 <_VLimbNameFont> 6 </_VLimbNameFont>			<!-- [6] Font for the limb name in the meters	-->
 <_VMeterFont> 4 </_VMeterFont>					<!-- [4] Font for the hit chance % values		-->
-<_VShowEH> 0 </_VShowEH>						<!-- [1] Show enemy health in V.A.T.S?			-->
+<_VShowEH> 1 </_VShowEH>						<!-- [1] Show enemy health in V.A.T.S?			-->
 <_VShowAP> 1 </_VShowAP>						<!-- [1] Show Action Points in V.A.T.S?			-->
-<_VShowHI> 0 </_VShowHI>						<!-- [1] Show Health Info in V.A.T.S?			-->
+<_VShowHI> 1 </_VShowHI>						<!-- [1] Show Health Info in V.A.T.S?			-->
 <_VShowBPI> 1 </_VShowBPI>						<!-- [1] Show BodyPart info?					-->
 <_VAQLWidth> 300 </_VAQLWidth>					<!-- [300] Action queue list width				-->
 
