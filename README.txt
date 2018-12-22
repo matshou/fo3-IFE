@@ -61,6 +61,7 @@ This pack includes various flavour mods that tweak the game to improve existing 
 
 List of public mods included:
 -----------------------------
+ - More Scrap Metal CRAFTing ~ SigmondDroid
  - Realistic Bullet Speed ~ StuckInMyPants
  - Less suspicious NPCs ~ bluebellfairy
  - Scribe Yearling takes all Pre-War Books ~ Yukichigai
