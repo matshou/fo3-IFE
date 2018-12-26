@@ -14,7 +14,7 @@ Some custom audio files provided by external have been normalized.
 - [Enhanced Geiger Sounds](https://www.nexusmods.com/fallout3/mods/22355) ~ ecksile
 
 #### Recommended mods:
-- Fallout 3 - HD Audio Overhaul
+- [Fallout 3 - HD Audio Overhaul](https://www.nexusmods.com/fallout3/mods/13055) ~ Morwyn Kelm
 
 ## User Interface
 User interface and player camera have been highly customized allowing for more realism and immersion.
@@ -26,7 +26,7 @@ Some external mod components have been altered to ensure compatibility and maxim
 
 #### List of public mods included:
 - [Enhanced User Interface](https://www.nexusmods.com/fallout3/mods/16171) ~ 2cooldays
-- [Remove Glare From Loading Screens](https://www.nexusmods.com/fallout3/mods/15511) ~ Tommy
+- [Remove Glare From Loading Screens](https://www.nexusmods.com/fallout3/mods/15511) ~ hairylegs222
 - [Vanilla HUD Remastered](https://www.nexusmods.com/newvegas/mods/64102) ~ bmanzzs
 - [FO3 Enhanced Camera](https://www.nexusmods.com/fallout3/mods/20183) ~ LogicDragon
 - [Pip Boy and Terminal Glare Gone](https://www.nexusmods.com/fallout3/mods/22821) ~ GamerPoets
@@ -58,7 +58,7 @@ Each of the mods listed below has been modified to ensure compatibility.
 - [Scribe Yearling takes all Pre-War Books](https://www.nexusmods.com/fallout3/mods/20483) ~ Yukichigai
 - [Double Barrelled Shotgun Fix](https://www.nexusmods.com/fallout3/mods/7378) ~ Feltorn Von Dentai
 - [Confessor Cromwell has a Break](https://www.nexusmods.com/fallout3/mods/4660) ~ Sharkoon66
-- [Rivet City Realignment](https://www.nexusmods.com/fallout3/mods/5831) ~ Alystin
+- [Rivet City Realignment](https://www.nexusmods.com/fallout3/mods/5831) ~ angleae
 - [Council Seat Fix](https://www.nexusmods.com/fallout3/mods/22490) ~ AllYourFavorites
 - [Radio Ownership Fix](https://www.nexusmods.com/fallout3/mods/22301) ~ pitabox987
 - [Safe Regulator HQ](https://www.nexusmods.com/fallout3/mods/11853) ~ Talthybius
