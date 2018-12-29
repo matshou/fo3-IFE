@@ -67,10 +67,12 @@ plugins:
       - 'FO3 Wanderers Edition - DLC Anchorage.esp'
   - name: 'FO3 Wanderers Edition - Main File.esm'
     after:
+      - 'RH_IRONSIGHTS.esm'
       - 'Unofficial Fallout 3 Patch.esm'
   - name: 'FO3 Wanderers Edition - Main File.esp'
     after:
       - 'KillableChildren - UFP CPatch.esp'
+      - 'Scrap Metal Crafting - Main File.esp'
       - 'WWM - Main File.esp'
   - name: 'FO3 Wanderers Edition - Optional Restore Tracers (automatics only).esp'
     after:
@@ -84,24 +86,33 @@ plugins:
   - name: 'FO3 Wanderers Edition - Realistic Bullets.esp'
     after:
       - 'FO3 Wanderers Edition - DLC Mothership Zeta.esp'
+  - name: 'FO3LODGen.esp'
+    after:
+      - 'CASM.esp'
   - name: 'IFE - Ambient Filter.esp'
     after:
       - 'IFE - The Institute CPatch.esp'
   - name: 'IFE - Directors Cut.esp'
     after:
       - 'Directors Chair - Fallout 3.esp'
+  - name: 'IFE - Equipment.esp'
+    after:
+      - 'StreetLights - IFE Patch.esp'
   - name: 'IFE - Fallout 3 Patch.esm'
     after:
       - 'IFE - Main File.esm'
   - name: 'IFE - Fallout 3 Patch.esp'
     after:
       - 'FCO - UFP CPatch.esp'
+  - name: 'IFE - Ironsight Patch.esp'
+    after:
+      - 'RH_FWE_Bridge.esp'
   - name: 'IFE - Main File.esm'
     after:
       - 'FO3 Wanderers Edition - Alternate Travel.esp'
   - name: 'IFE - Miscellaneous.esp'
     after:
-      - 'StreetLights - IFE Patch.esp'
+      - 'IFE - Equipment.esp'
   - name: 'IFE - PiPBoy Light.esp'
     after:
       - 'IFE - Visual Preset.esp'
@@ -111,6 +122,9 @@ plugins:
   - name: 'IFE - Sound Effects.esp'
     after:
       - 'IFE - Directors Cut.esp'
+  - name: 'IFE - Stealth Tactics.esp'
+    after:
+      - 'IFE - Miscellaneous.esp'
   - name: 'IFE - The Institute CPatch.esp'
     after:
       - 'That Middle Aged Guy - Main File.esp'
@@ -154,20 +168,29 @@ plugins:
   - name: 'NEOFACES.esp'
     after:
       - 'UPP - FWE CPatch.esp'
+  - name: 'Player Animations - Food & Drink (FWE).esp'
+    after:
+      - 'UUF3P - FWE Patch.esp'
+      - 'WWM - IFE CPatch.esp'
   - name: 'Realistic Interior Lighting.esp'
     after:
       - 'IFE - The Institute CPatch.esp'
   - name: 'RH_FWE_Bridge.esp'
     after:
-      - 'UUF3P - FWE Patch.esp'
-  - name: 'RH_IRONSIGHTS.esm'
+      - 'Player Animations - Food & Drink (FWE).esp'
+  - name: 'Scrap Metal Crafting - FWE CPatch.esp'
     after:
-      - 'FO3 Wanderers Edition - Main File.esm'
+      - 'IFE - Ironsight Patch.esp'
+      - 'UUF3P - FWE Patch.esp'
+  - name: 'Scrap Metal Crafting - Main File.esp'
+    after:
+      - 'IFE - Fallout 3 Patch.esp'
   - name: 'StreetLights - IFE Patch.esp'
     after:
       - 'StreetLights - UFP Patch.esp'
   - name: 'StreetLights - UFP Patch.esp'
     after:
+      - 'NEOFACES - KChild CPatch.esp'
       - 'UUF3P - FWE Patch.esp'
   - name: 'StreetLights_Light.esp'
     after:
@@ -177,12 +200,17 @@ plugins:
       - 'That Middle Aged Guy - Main File.esp'
   - name: 'That Middle Aged Guy - Main File.esp'
     after:
+      - 'IFE - Ironsight Patch.esp'
       - 'IFE - Power of The Atom.esp'
+      - 'IFE - Stealth Tactics.esp'
+      - 'RH_FWE_Bridge.esp'
+      - 'WWM - IFE CPatch.esp'
   - name: 'That Middle Aged Guy.esp'
     after:
       - 'IFE - Miscellaneous.esp'
   - name: 'TheInstitute - FWE Patch.esp'
     after:
+      - 'Scrap Metal Crafting - FWE CPatch.esp'
       - 'UUF3P - FWE Patch.esp'
   - name: 'TheInstitute.esm'
     after:
@@ -199,7 +227,8 @@ plugins:
       - 'TheInstitute - FWE Patch.esp'
   - name: 'UUF3P - FWE Patch.esp'
     after:
-      - 'FO3 Wanderers Edition - DLC The Pitt.esp'
+      - 'FO3 Wanderers Edition - Optional VATS Halftime.esp'
+      - 'WeaponJamming.esp'
   - name: 'WeaponJamming.esp'
     after:
       - 'FO3 Wanderers Edition - Main File.esp'
@@ -208,10 +237,10 @@ plugins:
       - 'UUF3P - FWE Patch.esp'
   - name: 'WWM - IFE CPatch.esp'
     after:
-      - 'IFE - Ambient Filter.esp'
+      - 'UUF3P - FWE Patch.esp'
   - name: 'WWM - Main File.esp'
     after:
-      - 'CASM.esp'
+      - 'FO3LODGen.esp'
       - 'IFE - Fallout 3 Patch.esp'
   - name: 'Xepha''s Dynamic Weather - Bonus.esp'
     after:
